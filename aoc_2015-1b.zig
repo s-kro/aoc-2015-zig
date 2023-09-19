@@ -4,7 +4,7 @@ const std = @import("std");
 pub fn main() !void {
     const stdout = std.io.getStdOut().writer();
     var fl: i16 = 0; // floor level
-    var bi: usize = 0; // floor level
+    var bi: usize = 0; // basement instruction
     const dr = @embedFile("./aoc_2015-1.dat"); // Santa's directions
 
     for (dr) |c, i| {
@@ -14,7 +14,7 @@ pub fn main() !void {
             fl -= 1;
         }
         if (fl < 0) {
-            bi = i + 1; // Convert Zero index to One
+            bi = i + 1; // Count like a human instead of a computer scientist
             break;
         }
     }
