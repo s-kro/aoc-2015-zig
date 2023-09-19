@@ -1,0 +1,6 @@
+*.dat
+*~
+/zig-cache
+
+# Executables
+aoc_2015-[0-9+][a|b]
