@@ -1,0 +1,19 @@
+// because zon file is really just a zig struct
+// comments are really done in the same way using 2 forward slashes
+.{
+    // the name of your project
+    .name = "aoc-2015-5a",
+    // the version of your project
+    .version = "0.0.1",
+
+    // the actual packages you need as dependencies of your project
+    .dependencies = .{
+        // the name of the package
+        .pcre2 = .{
+            // the url to the release of the module (needed the tag that matched my system plus build.zig commit)
+            .url = "https://github.com/PCRE2Project/pcre2/archive/79832a79304682ea8f4b4adfcab276081df4be04.tar.gz",
+            // the hash of the module, this is not the checksum of the tarball
+            .hash = "122055ee7d86f125d9849194f5a52efb2c84e869509f78aa16bcc70bb4e4b0487578",
+        },
+    },
+}

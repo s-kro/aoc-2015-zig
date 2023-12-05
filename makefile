@@ -1,2 +1,2 @@
-aoc_2022-1a: aoc_2015-1a.zig
-	zig build-exe $^
+aoc_2015-5b: src/aoc_2015-5b.zig
+	zig build run --verbose -freference-trace
